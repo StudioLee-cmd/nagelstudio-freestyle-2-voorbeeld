@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlamNails — Nagelstudio Rotterdam</title>
+  <meta name="description" content="GlamNails is de gezelligste nagelstudio van Rotterdam. Gellak, manicure, nail art en meer in een warme, persoonlijke sfeer.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="/" class="nav-logo">GlamNails</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Over ons</a></li>
+        <li><a href="#services">Behandelingen</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Boek nu</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Top nagelstudio's in Rotterdam</span>
+      <h1>Uw nagels, onze <span>passie</span></h1>
+      <p>Warm, persoonlijk en altijd een prachtig resultaat. Bij GlamNails voelt u zich thuis terwijl wij uw nagels verwennen.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Boek uw afspraak</a>
+        <a href="#portfolio" class="btn-outline">Bekijk resultaten</a>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span>Scroll</span><div class="line"></div></div>
+  </section>
+  <div class="ticker" style="background:var(--color-accent,#f5a623);padding:12px 0;overflow:hidden;">
+    <div style="display:flex;gap:48px;animation:tickerScroll 20s linear infinite;white-space:nowrap;">
+      <span><iconify-icon icon="lucide:palette"></iconify-icon> Gellak</span><span><iconify-icon icon="lucide:sparkles"></iconify-icon> Acryl</span><span><iconify-icon icon="lucide:hand"></iconify-icon> Manicure</span><span><iconify-icon icon="lucide:heart"></iconify-icon> Pedicure</span><span><iconify-icon icon="lucide:brush"></iconify-icon> Nail art</span><span><iconify-icon icon="lucide:scissors"></iconify-icon> Verwijdering</span><span><iconify-icon icon="lucide:palette"></iconify-icon> Gellak</span><span><iconify-icon icon="lucide:sparkles"></iconify-icon> Acryl</span><span><iconify-icon icon="lucide:hand"></iconify-icon> Manicure</span><span><iconify-icon icon="lucide:heart"></iconify-icon> Pedicure</span><span><iconify-icon icon="lucide:brush"></iconify-icon> Nail art</span><span><iconify-icon icon="lucide:scissors"></iconify-icon> Verwijdering</span>
+    </div>
+  </div>
+  <style>@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}</style>
+  <style>.ticker span{display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;font-weight:700;color:var(--color-bg,#0a0a0f);text-transform:uppercase;letter-spacing:0.05em;}</style>
+
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal"><img src="images/about.jpg" alt="GlamNails Rotterdam"></div>
+        <div class="about-content reveal">
+          <p class="about-tag">Over GlamNails</p>
+          <h2>Persoonlijk en <span>professioneel</span></h2>
+          <p>GlamNails is meer dan een nagelstudio — het is een plek waar u even tot rust komt. In ons lichte, warme atelier in Rotterdam nemen we de tijd voor elke klant.</p>
+          <p>We werken met de beste producten en zijn altijd op de hoogte van de nieuwste technieken en trends.</p>
+          <div class="about-stats">
+            <div class="stat-item"><div class="stat-number">2500+</div><div class="stat-label">Tevreden klanten</div></div>
+            <div class="stat-item"><div class="stat-number">6</div><div class="stat-label">Jaar ervaring</div></div>
+            <div class="stat-item"><div class="stat-number">5.0</div><div class="stat-label">Google score</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal"><p class="section-tag">Behandelingen</p><h2>Wat wij <span>bieden</span></h2><p>Elke behandeling wordt met zorg en aandacht uitgevoerd.</p></div>
+      <div class="services-grid">
+        <div class="service-card reveal"><div class="service-icon"><i data-lucide="palette"></i></div><h3>Gellak</h3><p>Prachtige, langhoudende kleuren die weken meegaan.</p></div>
+        <div class="service-card reveal"><div class="service-icon"><i data-lucide="sparkles"></i></div><h3>Acrylnagels</h3><p>Op maat gemaakte acrylnagels in elke vorm en lengte.</p></div>
+        <div class="service-card reveal"><div class="service-icon"><i data-lucide="hand"></i></div><h3>Manicure</h3><p>Verzorgende manicure voor mooie, gezonde handen.</p></div>
+        <div class="service-card reveal"><div class="service-icon"><i data-lucide="heart"></i></div><h3>Pedicure</h3><p>Ontspannende voetbehandeling met professionele afwerking.</p></div>
+        <div class="service-card reveal"><div class="service-icon"><i data-lucide="brush"></i></div><h3>Nail art</h3><p>Creatieve designs van subtiel tot statement.</p></div>
+        <div class="service-card reveal"><div class="service-icon"><i data-lucide="scissors"></i></div><h3>Verwijdering</h3><p>Veilige verwijdering van gellak en acryl zonder schade.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="before-after">
+    <div class="container">
+      <div class="section-header reveal"><p class="section-tag">Resultaat</p><h2>Voor & <span>na</span></h2><p>Bekijk het verschil dat onze behandelingen maken.</p></div>
+      <div class="ba-wrapper reveal" id="baWrapper">
+        <img src="images/ba-after.jpg" alt="Na behandeling">
+        <div class="ba-before" id="baBefore"><img src="images/ba-before.jpg" alt="Voor behandeling"></div>
+        <div class="ba-handle" id="baHandle"></div>
+        <span class="ba-label before">Voor</span>
+        <span class="ba-label after">Na</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal"><p class="section-tag">Portfolio</p><h2>Recent <span>werk</span></h2></div>
+      <div class="carousel-wrapper reveal">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide"><img src="images/carousel.jpg" alt="Gellak set"><div class="carousel-overlay"><h3>Blush & Gold</h3><p>Gellak met gouden accenten</p></div></div>
+          <div class="carousel-slide"><img src="images/project1.jpg" alt="French manicure"><div class="carousel-overlay"><h3>Modern French</h3><p>Moderne twist op de klassieke French</p></div></div>
+          <div class="carousel-slide"><img src="images/project2.jpg" alt="Nail art"><div class="carousel-overlay"><h3>Floral Dreams</h3><p>Handgeschilderde bloemen op nude base</p></div></div>
+        </div>
+      </div>
+      <div class="carousel-nav" id="carouselNav"><button class="carousel-dot active" data-index="0"></button><button class="carousel-dot" data-index="1"></button><button class="carousel-dot" data-index="2"></button></div>
+    </div>
+  </section>
+
+  <section class="detail-strip">
+    <div class="container">
+      <div class="detail-grid">
+        <div class="detail-content reveal">
+          <h2>Waarom <span>GlamNails</span>?</h2>
+          <p>Een bezoek aan GlamNails is meer dan een behandeling — het is me-time.</p>
+          <ul class="detail-list">
+            <li><i data-lucide="check" style="width:18px;height:18px"></i> Gratis thee en koffie bij elke afspraak</li>
+            <li><i data-lucide="check" style="width:18px;height:18px"></i> Altijd op tijd, geen lange wachttijden</li>
+            <li><i data-lucide="check" style="width:18px;height:18px"></i> Hypoallergene producten beschikbaar</li>
+            <li><i data-lucide="check" style="width:18px;height:18px"></i> Flexibele openingstijden</li>
+          </ul>
+        </div>
+        <div class="detail-image reveal"><img src="images/detail.jpg" alt="Studio interieur"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-header reveal"><p class="section-tag">Reviews</p><h2>Klanten over <span>ons</span></h2></div>
+      <div class="reviews-grid">
+        <div class="review-card reveal"><div class="review-stars"><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i></div><p>"Zo'n fijne sfeer! Ik voel me altijd welkom en mijn nagels zijn prachtig."</p><div class="review-author">Michelle V.</div><div class="review-role">Gellak</div></div>
+        <div class="review-card reveal"><div class="review-stars"><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i></div><p>"Eindelijk een studio die luistert naar wat je wilt. Het resultaat is perfect!"</p><div class="review-author">Laura B.</div><div class="review-role">Acrylnagels + Nail art</div></div>
+        <div class="review-card reveal"><div class="review-stars"><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i><i data-lucide="star" style="width:16px;height:16px;fill:currentColor"></i></div><p>"Mijn manicure houdt altijd minstens 3 weken. Beste prijs-kwaliteit in Rotterdam."</p><div class="review-author">Fatima A.</div><div class="review-role">Manicure + Gellak</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team">
+    <div class="container">
+      <div class="team-grid">
+        <div class="team-image reveal"><img src="images/team.jpg" alt="Team GlamNails"></div>
+        <div class="team-content reveal">
+          <h2>Het <span>team</span></h2>
+          <p>Ons team bestaat uit gepassioneerde nail stylisten die elk detail serieus nemen. We nemen de tijd om naar uw wensen te luisteren.</p>
+          <p>Bij GlamNails bent u geen nummer, maar een gast. We kennen onze vaste klanten bij naam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog">
+    <div class="container">
+      <div class="section-header reveal"><p class="section-tag">Blog</p><h2>Tips & <span>inspiratie</span></h2></div>
+      <div class="blog-grid">
+        <div class="blog-card reveal"><img src="images/craft.jpg" alt="Tips"><div class="blog-card-body"><span class="blog-card-tag">Tips</span><h3>Zo houd je gellak langer mooi</h3><p>Praktische tips voor maximale houdbaarheid.</p><a href="blog.html" class="read-more">Lees meer &rarr;</a></div></div>
+        <div class="blog-card reveal"><img src="images/kitchen.jpg" alt="Trends"><div class="blog-card-body"><span class="blog-card-tag">Trends</span><h3>Herfst/winter nagelkleuren 2026</h3><p>De mooiste tinten voor het koude seizoen.</p><a href="blog.html" class="read-more">Lees meer &rarr;</a></div></div>
+        <div class="blog-card reveal"><img src="images/carousel.jpg" alt="Verzorging"><div class="blog-card-body"><span class="blog-card-tag">Verzorging</span><h3>Nagelriemen verzorgen: de basics</h3><p>Waarom nagelriemverzorging zo belangrijk is.</p><a href="blog.html" class="read-more">Lees meer &rarr;</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="cta-content">
+      <h2>Tijd voor <span>mooie</span> nagels?</h2>
+      <p>Boek uw afspraak en ervaar het GlamNails verschil.</p>
+      <a href="#contact" class="btn-primary">Boek nu</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="/" class="nav-logo">GlamNails</a><p>Uw nagelstudio in Rotterdam.</p></div>
+        <div><h4>Behandelingen</h4><ul><li><a href="#services">Gellak</a></li><li><a href="#services">Manicure</a></li><li><a href="#services">Nail art</a></li></ul></div>
+        <div><h4>Studio</h4><ul><li><a href="#about">Over ons</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li><a href="mailto:info@glamnails.nl">info@glamnails.nl</a></li><li><a href="tel:+31101234567">010-1234567</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 GlamNails. Alle rechten voorbehouden.</p></div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    lucide.createIcons();
+    window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
+    document.getElementById('hamburger').addEventListener('click', () => { document.getElementById('navLinks').classList.toggle('open'); });
+    gsap.registerPlugin(ScrollTrigger);
+    document.querySelectorAll('.reveal').forEach(el => {
+      gsap.fromTo(el, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .8, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 85%', once: true } });
+    });
+    const track = document.getElementById('carouselTrack'); const dots = document.querySelectorAll('.carousel-dot'); let current = 0;
+    function goToSlide(i) { current = i; track.style.transform = `translateX(-${i * 100}%)`; dots.forEach((d, idx) => d.classList.toggle('active', idx === i)); }
+    dots.forEach(d => d.addEventListener('click', () => goToSlide(+d.dataset.index)));
+    setInterval(() => goToSlide((current + 1) % 3), 5000);
+    // Before/After
+    const wrapper = document.getElementById('baWrapper'); const before = document.getElementById('baBefore'); const handle = document.getElementById('baHandle'); let dragging = false;
+    function moveTo(x) { const rect = wrapper.getBoundingClientRect(); let pct = ((x - rect.left) / rect.width) * 100; pct = Math.max(5, Math.min(95, pct)); before.style.width = pct + '%'; handle.style.left = pct + '%'; }
+    wrapper.addEventListener('mousedown', () => dragging = true); window.addEventListener('mouseup', () => dragging = false);
+    window.addEventListener('mousemove', e => { if (dragging) moveTo(e.clientX); });
+    wrapper.addEventListener('touchstart', () => dragging = true); window.addEventListener('touchend', () => dragging = false);
+    window.addEventListener('touchmove', e => { if (dragging) moveTo(e.touches[0].clientX); });
+  </script>
+</body>
+</html>

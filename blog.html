@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — GlamNails Rotterdam</title>
+  <meta name="description" content="Nageltrends, verzorgingstips en inspiratie van GlamNails Rotterdam.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</head>
+<body>
+  <nav class="navbar" id="navbar"><div class="container"><a href="/" class="nav-logo">GlamNails</a><ul class="nav-links" id="navLinks"><li><a href="index.html#about">Over ons</a></li><li><a href="index.html#services">Behandelingen</a></li><li><a href="index.html#portfolio">Portfolio</a></li><li><a href="index.html#reviews">Reviews</a></li><li><a href="blog.html">Blog</a></li></ul><a href="index.html#contact" class="nav-cta">Boek nu</a><button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div></nav>
+
+  <section class="blog-hero"><div class="container"><h1>Onze <span>Blog</span></h1><p>Tips, trends en inspiratie voor prachtige nagels.</p></div></section>
+
+  <section class="blog-listing"><div class="container"><div class="blog-grid">
+    <div class="blog-featured blog-card reveal"><img src="images/hero.jpg" alt="Nageltrends"><div class="blog-card-body"><span class="blog-card-tag">Uitgelicht</span><h3>De grote nageltrendsguide voor 2026</h3><p>Van soft pastels tot bold neons — alles over de kleuren, vormen en technieken die dit jaar populair zijn bij nagelliefhebbers.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+    <div class="blog-card reveal"><img src="images/craft.jpg" alt="Gellak"><div class="blog-card-body"><span class="blog-card-tag">Tips</span><h3>Zo houd je gellak langer mooi</h3><p>Praktische tips voor maximale houdbaarheid.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+    <div class="blog-card reveal"><img src="images/kitchen.jpg" alt="Kleuren"><div class="blog-card-body"><span class="blog-card-tag">Trends</span><h3>Herfst/winter nagelkleuren</h3><p>De mooiste tinten voor het koude seizoen.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+    <div class="blog-card reveal"><img src="images/carousel.jpg" alt="Nagelriemen"><div class="blog-card-body"><span class="blog-card-tag">Verzorging</span><h3>Nagelriemen verzorgen: zo doe je dat</h3><p>De basics van nagelriemverzorging uitgelegd.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+    <div class="blog-card reveal"><img src="images/detail.jpg" alt="Bruiloft"><div class="blog-card-body"><span class="blog-card-tag">Bruiloft</span><h3>Perfecte nagels voor je trouwdag</h3><p>Elegante designs die passen bij elke bruidslook.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+    <div class="blog-card reveal"><img src="images/project1.jpg" alt="Acryl"><div class="blog-card-body"><span class="blog-card-tag">Acryl</span><h3>Acryl vs. gel: wat past bij jou?</h3><p>De verschillen en voordelen op een rij.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+    <div class="blog-card reveal"><img src="images/project2.jpg" alt="Zomer"><div class="blog-card-body"><span class="blog-card-tag">Inspiratie</span><h3>Zomerse nail art inspiratie</h3><p>Frisse, speelse designs voor de warme maanden.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+  </div></div></section>
+
+  <section class="cta" id="contact"><div class="cta-content"><h2>Tijd voor <span>mooie</span> nagels?</h2><p>Boek uw afspraak bij GlamNails.</p><a href="index.html#contact" class="btn-primary">Boek nu</a></div></section>
+
+  <footer class="footer"><div class="container"><div class="footer-grid">
+    <div class="footer-brand"><a href="/" class="nav-logo">GlamNails</a><p>Uw nagelstudio in Rotterdam.</p></div>
+    <div><h4>Behandelingen</h4><ul><li><a href="index.html#services">Gellak</a></li><li><a href="index.html#services">Manicure</a></li></ul></div>
+    <div><h4>Studio</h4><ul><li><a href="index.html#about">Over ons</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li><a href="mailto:info@glamnails.nl">info@glamnails.nl</a></li><li><a href="tel:+31101234567">010-1234567</a></li></ul></div>
+  </div><div class="footer-bottom"><p>&copy; 2026 GlamNails. Alle rechten voorbehouden.</p></div></div></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    lucide.createIcons();
+    window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
+    document.getElementById('hamburger').addEventListener('click', () => { document.getElementById('navLinks').classList.toggle('open'); });
+    gsap.registerPlugin(ScrollTrigger);
+    document.querySelectorAll('.reveal').forEach(el => { gsap.fromTo(el, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .8, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 85%', once: true } }); });
+  </script>
+</body>
+</html>
